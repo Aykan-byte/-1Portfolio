@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+body {
+  height: 100%;
+  padding-top: 300px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #f8f9fa, #AEC6CF, #6CA0DC, #007bff); /* Başlangıç gradyanı */
+    background-size: 400% 400%; /* Arka plan boyutunu artır */
+    animation: gradientAnimation 5s ease infinite; /* Animasyonu ekle */
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%; /* Başlangıç pozisyonu */
+  }
+  50% {
+      background-position: 100% 50%; /* Orta pozisyon */
+  }
+  100% {
+      background-position: 0% 50%; /* Son pozisyon */
+  }
+}
+
+.header-wrapper {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Ortaya hizalamak için */
+  background-color: #AEC6CF; /* Arka plan rengi, istersen değiştirebilirsin */
+  z-index: 1000; 
+  padding: 10px 0; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+header {
+  display: flex;
+  gap: 40px; /* Linkler arasındaki boşluk */
+}
+
+header a {
+  text-decoration: none; /* Linklerin altını kaldırmak için */
+  color: #000; /* Yazı rengini belirle */
+  font-weight: bold;
+  font-size: 19px;
+  transition: .2s;
+}
+header a:hover {
+    color: #007BFF; /* Hover'da link rengi */
+  }
+header a i {
+  font-size: 20px; /* İkonların boyutu */
+  color: #000; /* İkon rengi */
+  transition: .2s;
+}
+header a i:hover{
+    color: #007BFF;
+}
+
+.centered-div {
+  width: 500px; /* İstediğin genişlik */
+  text-align: center; /* Metni ortala */
+  background: linear-gradient(270deg, #f8f9fa, #AEC6CF, #6CA0DC, #007bff); /* Başlangıç gradyanı */
+    background-size: 400% 400%; /* Arka plan boyutunu artır */
+    animation: gradientAnimation 5s ease infinite; /* Animasyonu ekle */
+}
+
+.footer-wrapper{
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #AEC6CF;
+  display: flex;
+  justify-content: center; /* Ortaya hizalamak için */
+}
+.footer-wrapper footer p{
+  font-size: 19px;
+  font-weight: bold;
+}
+
