@@ -3,25 +3,25 @@
 body {
   height: 100%;
   padding-top: 300px;
-  background-color: #FFFFFF;
+  background-color: rgb(4, 66, 4);
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(270deg, #f8f9fa, #AEC6CF, #6CA0DC, #007bff); /* Başlangıç gradyanı */
-    background-size: 400% 400%; /* Arka plan boyutunu artır */
-    animation: gradientAnimation 5s ease infinite; /* Animasyonu ekle */
+   background: linear-gradient(90deg, rgb(122, 187, 122), rgb(70, 155, 70), rgb(18, 104, 18), rgb(4, 66, 4)); 
+    background-size: 400% 400%; 
+    animation: gradientAnimation 5s ease infinite; 
 }
 @keyframes gradientAnimation {
   0% {
-      background-position: 0% 50%; /* Başlangıç pozisyonu */
+      background-position: 0% 50%; 
   }
   50% {
-      background-position: 100% 50%; /* Orta pozisyon */
+      background-position: 100% 50%; 
   }
   100% {
-      background-position: 0% 50%; /* Son pozisyon */
+      background-position: 0% 50%; 
   }
 }
 
@@ -31,42 +31,40 @@ body {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* Ortaya hizalamak için */
-  background-color: #AEC6CF; /* Arka plan rengi, istersen değiştirebilirsin */
+  justify-content: center; 
+  background-color: #1a271f; 
   z-index: 1000; 
   padding: 10px 0; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 header {
   display: flex;
-  gap: 40px; /* Linkler arasındaki boşluk */
+  gap: 40px;
 }
 
 header a {
-  text-decoration: none; /* Linklerin altını kaldırmak için */
-  color: #000; /* Yazı rengini belirle */
+  text-decoration: none; 
+  color: white; 
   font-weight: bold;
   font-size: 19px;
   transition: .2s;
 }
 header a:hover {
-    color: #007BFF; /* Hover'da link rengi */
+    color: wheat; 
   }
 header a i {
-  font-size: 20px; /* İkonların boyutu */
-  color: #000; /* İkon rengi */
+  font-size: 20px; 
+  color: rgb(207, 205, 203); 
   transition: .2s;
 }
 header a i:hover{
-    color: #007BFF;
+    color: wheat;
 }
 
 .centered-div {
-  width: 500px; /* İstediğin genişlik */
-  text-align: center; /* Metni ortala */
-  background: linear-gradient(270deg, #f8f9fa, #AEC6CF, #6CA0DC, #007bff); /* Başlangıç gradyanı */
-    background-size: 400% 400%; /* Arka plan boyutunu artır */
-    animation: gradientAnimation 5s ease infinite; /* Animasyonu ekle */
+  width: 500px; 
+  text-align: center; 
+  color: rgb(207, 205, 203);
 }
 
 .footer-wrapper{
@@ -74,12 +72,14 @@ header a i:hover{
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #AEC6CF;
+  background-color: #1a271f;
   display: flex;
-  justify-content: center; /* Ortaya hizalamak için */
+  justify-content: center; 
 }
 .footer-wrapper footer p{
   font-size: 19px;
   font-weight: bold;
+  text-align: center;
+  color: rgb(207, 205, 203);
 }
 
